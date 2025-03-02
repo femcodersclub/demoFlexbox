@@ -36,7 +36,6 @@ body {
   padding: 0 15px;
 }
 
-/* Header */
 header {
   background: linear-gradient(
     135deg,
@@ -110,7 +109,23 @@ select {
   border-radius: var(--border-radius);
   background-color: white;
   font-family: inherit;
+  transition: all 0.2s ease-in-out;
 }
+
+select:hover, select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--accent-color);
+}
+.info-message {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 
 .demo-container {
   display: flex;
