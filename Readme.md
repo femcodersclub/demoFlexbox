@@ -4,7 +4,8 @@
 
 ## 📋 Descripción
 
-Este proyecto es una demo interactiva que acompaña al artículo "Flexbox: El poder de crear layouts flexibles" del blog de femCoders Club. Permite experimentar con las principales propiedades de Flexbox en tiempo real y ver ejemplos prácticos de su aplicación.
+Este proyecto es una demo interactiva que acompaña al artículo ["Flexbox: El poder de crear layouts flexibles"](https://www.femcodersclub.com/recursos/css/flexbox) del blog de femCoders Club.  
+Permite experimentar con las principales propiedades de Flexbox en tiempo real y ver ejemplos prácticos de su aplicación.
 
 🔗 **Prueba la demo en vivo aquí:**  
 👉 [Demo de Flexbox](https://femcodersclub.github.io/demoFlexbox/)
