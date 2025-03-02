@@ -1,10 +1,13 @@
 # Flexbox Demo - femCoders Club
 
-![Banner](https://via.placeholder.com/800x200)
+![Demo de Flexbox](assets/demo.gif)
 
 ## 📋 Descripción
 
 Este proyecto es una demo interactiva que acompaña al artículo "Flexbox: El poder de crear layouts flexibles" del blog de femCoders Club. Permite experimentar con las principales propiedades de Flexbox en tiempo real y ver ejemplos prácticos de su aplicación.
+
+🔗 **Prueba la demo en vivo aquí:**  
+👉 [Demo de Flexbox](https://femcodersclub.github.io/demoFlexbox/)
 
 ## ✨ Características
 
@@ -21,7 +24,7 @@ Este proyecto es una demo interactiva que acompaña al artículo "Flexbox: El po
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/femcoders-club/flexbox-demo.git
+   git clone https://github.com/femcodersclub/demoFlexbox.git
    ```
 
 2. Abre el archivo `index.html` en tu navegador.
@@ -35,7 +38,7 @@ Este proyecto es una demo interactiva que acompaña al artículo "Flexbox: El po
 ├── styles.css
 ├── script.js
 ├── README.md
-└── LICENSE
+└── assets
 ```
 
 ## 🎮 Funcionalidades adicionales
