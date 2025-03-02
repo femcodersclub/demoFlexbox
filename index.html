@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>femCoders Club - Demo de Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-code"></i> femCoders Club</h1>
+            <p>Demo interactiva de Flexbox</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Flexbox: El poder de crear layouts flexibles</h2>
+            <p>Esta demo te permite experimentar con las principales propiedades de Flexbox. Usa los controles para ver cómo cambia el comportamiento de los elementos.</p>
+        </section>
+
+        <section class="controls">
+            <div class="control-group">
+                <h3>Propiedades del contenedor:</h3>
+                <div class="control">
+                    <label for="flex-direction">flex-direction:</label>
+                    <select id="flex-direction">
+                        <option value="row">row</option>
+                        <option value="row-reverse">row-reverse</option>
+                        <option value="column">column</option>
+                        <option value="column-reverse">column-reverse</option>
+                    </select>
+                </div>
+                <div class="control">
+                    <label for="justify-content">justify-content:</label>
+                    <select id="justify-content">
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="space-between">space-between</option>
+                        <option value="space-around">space-around</option>
+                        <option value="space-evenly">space-evenly</option>
+                    </select>
+                </div>
+                <div class="control">
+                    <label for="align-items">align-items:</label>
+                    <select id="align-items">
+                        <option value="stretch">stretch</option>
+                        <option value="flex-start">flex-start</option>
+                        <option value="flex-end">flex-end</option>
+                        <option value="center">center</option>
+                        <option value="baseline">baseline</option>
+                    </select>
+                </div>
+                <div class="control">
+                    <label for="flex-wrap">flex-wrap:</label>
+                    <select id="flex-wrap">
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap">wrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-container">
+            <div class="flex-container" id="demo-flex">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+            </div>
+            <div class="code-display">
+                <pre><code id="css-code">.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}</code></pre>
+            </div>
+        </section>
+
+        <section class="examples">
+            <h2>Ejemplos prácticos</h2>
+            
+            <h3>Ejemplo 1: Centrado perfecto</h3>
+            <div class="example-container">
+                <div class="center-demo">
+                    <div class="centered-item">Centrado con Flexbox</div>
+                </div>
+                <pre><code>.center-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}</code></pre>
+            </div>
+
+            <h3>Ejemplo 2: Navbar responsiva</h3>
+            <div class="example-container">
+                <nav class="navbar-demo">
+                    <div class="logo">femCoders</div>
+                    <ul class="menu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <p class="resize-note">Cambia el tamaño de la ventana para ver cómo la navbar se adapta</p>
+            </div>
+
+            <h3>Ejemplo 3: Galería de imágenes responsiva</h3>
+            <div class="example-container">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/150" alt="Imagen 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources">
+            <h2>Recursos adicionales</h2>
+            <ul>
+                <li><a href="https://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy</a> - Aprende Flexbox jugando</li>
+                <li><a href="http://www.flexboxdefense.com/" target="_blank">Flexbox Defense</a> - Otro juego para practicar</li>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank">MDN: Guía completa de Flexbox</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 femCoders Club - Creado con 💜 para ayudarte a dominar CSS</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
